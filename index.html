@@ -9,55 +9,67 @@
 </head>
 <body>
     <header>
-        <nav>
-            <h1>CalsBurned</h1>
-            <ul>
+        <nav class="navbar">
+            <div class="logo">CalsBurned</div>
+            <ul class="nav-links">
                 <li><a href="#features">Features</a></li>
-                <li><a href="#waitlist">Join Waitlist</a></li>
+                <li><a href="#waitlist">Waitlist</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
+            <a href="#waitlist" class="cta-btn">Join Waitlist</a>
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
         </nav>
     </header>
-
+    
     <section id="hero">
-        <div class="hero-text">
-            <h2>Track Your Calorie Burn Like Never Before</h2>
-            <p>Our advanced machine learning model provides highly accurate calorie burn calculations tailored to your body and activities.</p>
-            <a href="#waitlist" class="btn">Join Waitlist Now</a>
+        <div class="hero-content">
+            <h1>Track Your Calorie Burn Like Never Before</h1>
+            <p>Discover a smarter, data-driven approach to tracking calories burnt using advanced machine learning models. Get real-time insights and reach your fitness goals with CalsBurned AI.</p>
+            <a href="#waitlist" class="hero-btn">Join the Waitlist</a>
         </div>
     </section>
+    
 
     <section id="features">
-        <h2>Why CalsBurned AI?</h2>
+        <h2>Why Choose CalsBurned AI?</h2>
         <div class="features-container">
             <div class="feature">
-                <h3>Personalized Insights</h3>
-                <p>Unlike traditional calculators, we use machine learning models that tailor results based on your unique data.</p>
-            </div>
-            <!-- <div class="feature">
-                <h3>Integrations</h3>
-                <p>Sync your data from Google Fit, Apple Health, and more to get the most accurate calculations.</p>
+                <h3>Advanced Machine Learning Models</h3>
+                <p>
+                    CalsBurned AI uses cutting-edge machine learning models, including XGBoost, Random Forest, and Support Vector Machines, to provide highly accurate calorie burn predictions. These models analyze key metrics such as heart rate, body temperature, and activity duration, ensuring precise estimates for a variety of physical activities. Our research-backed approach allows for superior accuracy, helping you make informed decisions about your fitness goals.
+                </p>
             </div>
             <div class="feature">
-                <h3>Track Progress</h3>
-                <p>See your calorie burn history over time and make data-driven decisions about your fitness plan.</p>
-            </div> -->
+                <h3>Personalized Data-Driven Insights</h3>
+                <p>
+                    Our system tailors predictions to your unique body metrics and activities. Unlike traditional calculators, which often overlook individual differences, CalsBurned AI considers personalized inputs like age, weight, and activity intensity. This customization enables a more accurate reflection of your personal calorie burn, empowering you to optimize workouts based on real, data-driven insights.
+                </p>
+            </div>
+            <div class="feature">
+                <h3>Real-Time Calorie Burn Tracking</h3>
+                <p>
+                    With our predictive model built into a responsive web app, CalsBurned AI provides real-time calorie burn tracking. Simply input key activity data such as duration, heart rate, and body temperature, and our system instantly calculates your calorie expenditure. This instant feedback can be invaluable for tracking progress, adjusting fitness routines, and maintaining motivation on your health journey.
+                </p>
+            </div>
         </div>
     </section>
+    
+    
 
     <section id="waitlist">
         <h2>Be the First to Know!</h2>
-        <p>Sign up to join our waitlist and get early access to CalsBurned!</p>
-        <form id="waitlistForm">
-            <input type="email" id="email" name="email" placeholder="Enter your email" required>
-            <button type="submit" class="btn">Join Waitlist</button>
-        </form>
-        <div id="successMessage" class="hidden">Thank you for joining the waitlist!</div>
+        <p>Sign up to join our waitlist and get early access to CalsBurned AI.</p>
+        <div id="getWaitlistContainer" data-waitlist_id="21745" data-widget_type="WIDGET_1"></div>
+        <link rel="stylesheet" type="text/css" href="https://prod-waitlist-widget.s3.us-east-2.amazonaws.com/getwaitlist.min.css"/>
+        <script src="https://prod-waitlist-widget.s3.us-east-2.amazonaws.com/getwaitlist.min.js"></script>
     </section>
 
     <footer>
         <p>&copy; 2024 CalsBurned AI. All Rights Reserved.</p>
     </footer>
-
-    <script src="script.js"></script>
 </body>
 </html>
